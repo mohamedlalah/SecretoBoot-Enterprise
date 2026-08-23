@@ -1,0 +1,80 @@
+{
+  "policyVersion": "v9level1alpha1",
+  "defaultAction": "deny",
+  "maximumAccessLevel": 1,
+  "excludedScopes": ["EFI contents", "BCD", "NVRAM", "Secure Boot", "BootOrder", "BootNext"],
+  "operations": [
+    {
+      "id": "platform.runtime",
+      "kind": "DotNetApi",
+      "name": "System.Runtime.InteropServices.RuntimeInformation",
+      "members": ["IsOSPlatform", "OSArchitecture", "OSDescription"],
+      "capability": "PlatformMetadata",
+      "requiresElevation": false,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "OS description and architecture only",
+      "failureBehavior": "Return structured UnsupportedPlatform or ApiUnavailable"
+    },
+    {
+      "id": "platform.environment",
+      "kind": "DotNetApi",
+      "name": "System.Environment",
+      "members": ["OSVersion", "Is64BitOperatingSystem"],
+      "capability": "PlatformMetadata",
+      "requiresElevation": false,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "Version and architecture only; machine/user names excluded",
+      "failureBehavior": "Return structured ApiUnavailable"
+    },
+    {
+      "id": "windows.os.cim",
+      "kind": "PowerShellCommand",
+      "name": "CimCmdlets\\Get-CimInstance",
+      "allowedArguments": { "ClassName": ["Win32_OperatingSystem"] },
+      "capability": "OperatingSystemMetadata",
+      "requiresElevation": false,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "Caption, version, build, and architecture only",
+      "failureBehavior": "Return structured CommandUnavailable, AccessDenied, Timeout, or ParseFailure"
+    },
+    {
+      "id": "storage.disks",
+      "kind": "PowerShellCommand",
+      "name": "Storage\\Get-Disk",
+      "allowedArguments": {},
+      "capability": "StorageInventory",
+      "requiresElevation": true,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "Raw unique IDs are transient and pseudonymized; serial numbers excluded",
+      "failureBehavior": "Return structured CommandUnavailable, AccessDenied, Timeout, or ParseFailure"
+    },
+    {
+      "id": "storage.partitions",
+      "kind": "PowerShellCommand",
+      "name": "Storage\\Get-Partition",
+      "allowedArguments": {},
+      "capability": "StorageInventory",
+      "requiresElevation": true,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "GPT identities and transient topology; access paths excluded from shared reports",
+      "failureBehavior": "Return structured CommandUnavailable, AccessDenied, Timeout, or ParseFailure"
+    },
+    {
+      "id": "storage.volumes",
+      "kind": "PowerShellCommand",
+      "name": "Storage\\Get-Volume",
+      "allowedArguments": {},
+      "capability": "StorageInventory",
+      "requiresElevation": true,
+      "requiresMount": false,
+      "touchesBootConfiguration": false,
+      "privacy": "Filesystem, label, size, and state; labels are display-only",
+      "failureBehavior": "Return structured CommandUnavailable, AccessDenied, Timeout, or ParseFailure"
+    }
+  ]
+}

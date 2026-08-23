@@ -1,0 +1,22 @@
+SecretoBoot V9 final-polish artwork provenance
+
+The SecretoBoot branding, selectors, Windows-style four-pane icon,
+Android/Bliss robot icon, Linux penguin-inspired icon, reboot icon, and
+shutdown icon were created specifically for SecretoBoot V9 from original
+vector geometry. No third-party icon pack is used by these runtime assets.
+
+FinalRelease.1 composes the SecretoBoot shield, title, approved developer
+credit (Mohamed LALAH / SecretoTools), and secretotools.com footer from
+repository-owned HTML/SVG geometry. The user-supplied approved visual mockup
+was used as a layout and styling reference; it is not redistributed as a
+runtime asset.
+
+The abstract dark-navy background base was generated with OpenAI's built-in
+image generation tool from an original prompt requesting a minimal premium
+boot-menu backdrop with a soft blue central glow, subtle glassy arcs, no text,
+no logos, no icons, and no watermark. SecretoBoot branding was subsequently
+composited locally from original vector/HTML source.
+
+Development sources are retained under v9/theme-src/SecretoBootV9.
+The upstream notices in this directory apply to bundled rEFInd, not to the
+original SecretoBoot artwork described above.

@@ -1,5 +1,15 @@
-Logs/
-*.log
-*.tmp
-.DS_Store
+# Build output
+/dist/
+/src/ui/Program.generated.cs
+/src/ui/SecretoBoot.SimplifiedUI.exe
+
+# Windows / IDE
+.vs/
+*.user
+*.suo
 Thumbs.db
+Desktop.ini
+
+# Temporary
+*.tmp
+*.log

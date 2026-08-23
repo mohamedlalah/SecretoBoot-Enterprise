@@ -1,38 +1,23 @@
-# Supported Systems
+# Supported systems and detection model
 
-## Current Support
+SecretoBoot V9 is designed for compatible **x64 UEFI Windows PCs**.
 
-SecretoBoot Enterprise v7.1 Stable has been tested for:
+## Recognized OS families
 
-- Windows 11
-- Google TV OS
-- Android TV based boot systems
-- UEFI boot systems
-- rEFInd-based dual boot
-- Manual boot entries
+The main dashboard currently recognizes and presents:
 
-## Experimental / Future Support
+- Windows
+- Android-x86 / Bliss OS style installations when a supported boot target is validated
+- Linux EFI installations when a supported loader is detected
 
-Planned or experimental support:
+The dashboard is dynamic. It does not reserve a fixed number of OS cards. Unknown or stale candidates are kept out of the main dashboard and remain available through Advanced Diagnostics.
 
-- ChromeOS Flex
-- FydeOS
-- Linux distributions
-- Multi-boot environments
-- Automatic OS detection
-- GUI installer
+## Firmware compatibility
 
-## Requirements
+UEFI firmware behavior differs across manufacturers and models. SecretoBoot includes a Windows-First Compatibility workflow for systems that repeatedly restore Windows Boot Manager as the first boot target.
 
-- UEFI system
-- Windows 11
-- rEFInd Boot Manager
-- Google TV OS boot partition
-- Administrative privileges on Windows
+Legacy BIOS-only systems are not the target platform.
 
-## Not Supported
+## Safety behavior
 
-- Legacy BIOS boot
-- MBR-only boot mode
-- Secure Boot without proper rEFInd configuration
-- Systems without EFI access
+If required firmware, storage, ownership, loader, Secure Boot, BitLocker, or identity checks cannot be validated, SecretoBoot is designed to stop the requested boot-management operation rather than report unverified success.

@@ -1,29 +1,15 @@
-# Third Party Software
+# Third-party software
 
 ## rEFInd Boot Manager
 
-**Project:** rEFInd Boot Manager  
-**Author:** Roderick W. Smith  
-**Official website:** https://www.rodsbooks.com/refind/  
-**Source / mirror:** https://github.com/vulgo/refind  
-**License:** BSD 3-Clause License
+SecretoBoot bundles **rEFInd Boot Manager 0.14.2**.
 
-rEFInd remains licensed under its own license.  
-SecretoBoot Enterprise does not modify the ownership of rEFInd.
+- Project: rEFInd Boot Manager
+- Author: Roderick W. Smith
+- Official website: https://www.rodsbooks.com/refind/
 
-Users should review the official rEFInd license and documentation before redistribution.
+The authoritative bundled license/credit files are preserved in:
 
-## SecretoBoot Additions
+`runtime/resources/refind/0.14.2/`
 
-The following components are original SecretoBoot work:
-
-- Theme
-- Installer
-- Scripts
-- Documentation
-- Branding
-- Icons
-- Configuration files
-- Images
-
-These components are Copyright © 2026 Mohamed LALAH / Secretofnet.
+SecretoBoot-specific branding, application logic, scripts, documentation, and visual assets remain separate from rEFInd and are covered by the SecretoBoot copyright notice.

@@ -1,12 +1,13 @@
-# Security Policy
+# Security policy
 
-SecretoBoot modifies boot configuration files. Always create a backup before use.
+Please report reproducible boot-safety or security issues through the GitHub repository's Issues section.
 
-## Reporting Issues
+Include, when possible:
 
-Please open a GitHub Issue and include:
+- PC manufacturer and model
+- Windows version
+- UEFI/firmware mode
+- Screenshot of the SecretoBoot error
+- The exact `Stage` and `Reason` shown by SecretoBoot
 
-- Device model
-- Screenshot of the error
-- Output of `Scripts\Check_Active_Config.cmd`
-- rEFInd version if known
+Do **not** publish private keys, passwords, recovery keys, serial numbers, or other sensitive information in an issue.

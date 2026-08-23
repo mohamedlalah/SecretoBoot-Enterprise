@@ -1,0 +1,33 @@
+{
+  "SchemaVersion": "v9-refind-assets-1",
+  "RefindVersion": "0.14.2",
+  "SourceArchiveSha256": "410c7828c4fec2f2179bd956073522415831d27c00416381b8f71153c190a311",
+  "Files": {
+    "COPYING.txt": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+    "CREDITS.txt": "c39813ab885e9fe45a1ca09dd6d447b99b5e3885ba38ed4e3317f514e88076ed",
+    "LICENSE.txt": "cebbc60079d3e79a1d94bf7c63482ca27d8ce58739d28c5e209bbd378337729b",
+    "refind_x64.efi": "eac079520d3d263b652dcc5330182ccaf42a1d47b5540dbfc545f3eb145a7e74",
+    "themes/SecretoBootV9/background.png": "c17d0aaa785f48dbda924306aea4e2773245774f871dbdd7f8a2aa7d90d18de2",
+    "themes/SecretoBootV9/branding.png": "6dfba35621a4e2472dbfc405c42ca9780251d55cbb2ca66afe3f84ca0e3b5f60",
+    "themes/SecretoBootV9/icons/android.png": "cc85d25efae86f23de30faa4ac1d2365b426d22b0da28f670bd4f08cdd060cd7",
+    "themes/SecretoBootV9/icons/bliss.png": "3c040a15005f0c04b608824f75541170aa820a251b1297eb50b18f0bd7d87c2a",
+    "themes/SecretoBootV9/icons/func_reset.png": "261c6e521703b812e77b48fd4baf0811985f85511690a748aa00b7a8991054c9",
+    "themes/SecretoBootV9/icons/func_shutdown.png": "aa640695c40e474b1fb81ae1ec054e92fe080ea3333d17c50567e717ae37bc4d",
+    "themes/SecretoBootV9/icons/linux.png": "dca50a3af24bbdd7acb695b424ea291f4e94cf347378a1af29cef4e0103d53f3",
+    "themes/SecretoBootV9/icons/reboot.png": "261c6e521703b812e77b48fd4baf0811985f85511690a748aa00b7a8991054c9",
+    "themes/SecretoBootV9/icons/shutdown.png": "aa640695c40e474b1fb81ae1ec054e92fe080ea3333d17c50567e717ae37bc4d",
+    "themes/SecretoBootV9/icons/windows.png": "55e8f0029cce475f0a9449881a5b1a9a7e67a14bf16248cfc942f8d0a6164c8e",
+    "themes/SecretoBootV9/legal/ARTWORK_PROVENANCE.txt": "471451b4d87dfbebd9ded35f03cae38b0d78782b0a5e8d6821fb6d8b975eb70f",
+    "themes/SecretoBootV9/legal/UPSTREAM_ICONS_README.txt": "3302ed75425e56c1dbaf254f8044f977e6783d803769633c8501c1698fe7c3a7",
+    "themes/SecretoBootV9/legal/licenses/cc-3.0.txt": "3f941b3b89cf7b8370ceb83cc76d2120d471b58735d8ca60238a751a48d7f72f",
+    "themes/SecretoBootV9/legal/licenses/cc-by-sa-4.0.txt": "9348ddfd44da5a127c59141981954746a860ec8e03e0412cf3af7134af0f97e2",
+    "themes/SecretoBootV9/legal/licenses/gpl-2.0.txt": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+    "themes/SecretoBootV9/legal/licenses/gpl-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "themes/SecretoBootV9/legal/licenses/lgpl-3.0.txt": "da7eabb7bafdf7d3ae5e9f223aa5bdc1eece45ac569dc21b3b037520b4464768",
+    "themes/SecretoBootV9/selector-small.png": "fdd81775119d2ee0cc66255999c5fb7b86e7c12a325c5c719084b6a83ffab693",
+    "themes/SecretoBootV9/selector.png": "7dd231145c0177f00cc7777913cd3ac0aa6a79fbdc033464289dd6dfea7339d3",
+    "themes/SecretoBootV9/theme-revision.txt": "ed3bba8f4bd622f454a0ebe6705b59a2315c3053575a679c7ce7a1e238df62ca",
+    "themes/SecretoBootV9/theme.conf": "7bbd946ee984194b2e491339f7ff265b6a7142645d036b98ba3a13a51c540ad6"
+  },
+  "DeploymentAuthorized": false
+}

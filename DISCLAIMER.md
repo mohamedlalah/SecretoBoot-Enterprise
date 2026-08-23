@@ -1,29 +1,7 @@
 # Disclaimer
 
-SecretoBoot Enterprise modifies boot-related files and EFI configuration.
+SecretoBoot modifies UEFI/EFI boot configuration when the user explicitly approves a boot-management action. Boot configuration changes can prevent a computer from starting if firmware, storage, or operating-system layouts are unusual or unsupported.
 
-Use this software at your own risk.
+Use SecretoBoot at your own risk. Keep a current backup of important data and have Windows recovery media available before changing boot configuration.
 
-## Important Safety Notice
-
-Before using SecretoBoot Enterprise:
-
-- Backup your EFI partition.
-- Keep a Windows recovery USB drive available.
-- Keep a copy of your original `BOOTX64.EFI`.
-- Keep a copy of your original `refind.conf`.
-- Do not use this tool on important production systems without testing.
-
-## No Warranty
-
-The author assumes no responsibility for:
-
-- Data loss
-- Boot failure
-- EFI corruption
-- System instability
-- Hardware or firmware issues
-- Incorrect installation
-- Misuse of the scripts
-
-SecretoBoot Enterprise is provided as-is, without warranty of any kind.
+SecretoBoot is designed to stop without applying unverified changes when its safety checks cannot validate the target configuration. No software can guarantee compatibility with every PC firmware implementation.
