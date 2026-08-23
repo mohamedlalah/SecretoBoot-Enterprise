@@ -5,7 +5,7 @@
 Developed by **Mohamed LALAH / SecretoTools**  
 Website: **secretotools.com**
 
-[English](docs/README_EN.md) · [Français](docs/README_FR.md) · [العربية](docs/README_AR.md)
+[English](Docs/README_EN.md) · [Français](Docs/README_FR.md) · [العربية](Docs/README_AR.md)
 
 ## Highlights
 
@@ -36,7 +36,7 @@ Do not run random EFI or BCDEdit commands from tutorials while SecretoBoot is ma
 - `src/ui/` — Windows Forms UI source
 - `runtime/` — verified SecretoBoot runtime, discovery, deployment, rEFInd and theme assets
 - `build/` — Windows build/release scripts
-- `docs/` — user documentation in English, French and Arabic
+- `Docs/` — user documentation in English, French and Arabic
 - `tools/` — emergency recovery utility
 
 ## Building from source
