@@ -1,33 +1,42 @@
-# SecretoBoot Enterprise v7.1 Stable
+# SecretoBoot V9 — Guide français
 
-Version stable de SecretoBoot Enterprise pour un double démarrage **Windows 11** et **Google TV OS** avec rEFInd.
+## À quoi sert SecretoBoot ?
 
-## Fonctionnalités
+SecretoBoot fournit une interface Windows simple pour détecter les systèmes d’exploitation pris en charge et déployer un menu de démarrage UEFI basé sur rEFInd avec l’identité visuelle SecretoBoot.
 
-- Interface professionnelle Secretofnet.
-- Entrées manuelles uniquement.
-- Pas de doublons Windows/Google TV.
-- Correction de l’icône Google TV.
-- Sauvegarde automatique de `refind.conf`.
-- Installation en un clic.
-- Outils de vérification et restauration.
-
-## Installation
-
-1. Décompressez le fichier ZIP.
-2. Ouvrez le dossier `Scripts`.
-3. Clic droit sur :
-   `Install_SecretoBoot_Enterprise_v7_1.cmd`
-4. Choisissez **Run as administrator**.
-5. Redémarrez.
+Le tableau de bord peut afficher Windows, Android/Bliss OS et Linux. Le nombre de cartes est dynamique : deux systèmes détectés = deux cartes, quatre systèmes détectés = quatre cartes. Les éléments inconnus ou obsolètes restent dans **Advanced Diagnostics**.
 
 ## Prérequis
 
-- Machine UEFI.
-- rEFInd déjà installé.
-- Windows 11.
-- Partition Google TV nommée `BOOT`.
-- Chargeur existant :
-  `EFI\BOOT\BOOTx64.EFI`
+- Windows 10 ou Windows 11 en 64 bits
+- Démarrage en mode UEFI
+- Validation administrateur uniquement lorsque SecretoBoot la demande
+- Secure Boot ne doit pas bloquer le chargeur rEFInd inclus ; SecretoBoot peut interrompre l’opération si Secure Boot est actif ou impossible à valider
+- BitLocker/chiffrement de l’appareil peut devoir être suspendu ou désactivé si SecretoBoot indique que le volume système protégé bloque l’opération
 
-© 2026 Secretofnet - Tous droits réservés.
+## Procédure recommandée
+
+1. Extraire le ZIP de SecretoBoot dans un nouveau dossier local.
+2. Lancer `SecretoBoot.exe` normalement. Ne forcez pas toute l’application en mode Administrateur.
+3. Cliquer sur **Scan Systems**.
+4. Ouvrir **rEFInd Setup Preview** et vérifier les cibles détectées.
+5. Installer SecretoBoot lorsque l’application propose l’installation validée.
+6. Ouvrir **Boot Manager Actions** puis choisir **Test Next Restart**.
+7. Redémarrer, vérifier que le menu SecretoBoot apparaît et que Windows démarre correctement.
+8. De retour sous Windows, refaire un scan puis choisir **Make SecretoBoot Default**.
+9. Redémarrer normalement.
+10. Si le firmware remet toujours Windows en premier, SecretoBoot peut proposer **Enable Windows-First Compatibility**. Activez cette option uniquement lorsqu’elle est proposée par l’application.
+
+Windows reste le choix automatique dans SecretoBoot avec un délai de 10 secondes.
+
+## Advanced / Recovery
+
+Les actions de réparation sont séparées du parcours normal afin d’éviter les erreurs. Utilisez-les uniquement si nécessaire. Un outil de restauration d’urgence du démarrage Windows natif est également fourni.
+
+## Suppression d’un système
+
+Après avoir supprimé un système d’exploitation, relancez **Scan Systems**. Le tableau de bord principal affiche les familles de systèmes reconnues ; les traces inconnues ou anciennes peuvent rester visibles uniquement dans Advanced Diagnostics.
+
+## Compatibilité
+
+SecretoBoot a été testé sur la machine de développement réelle, mais les firmwares diffèrent selon les fabricants. Il ne faut pas présenter le logiciel comme compatible avec tous les PC.

@@ -1,28 +1,8 @@
 # Copyright
 
-Copyright © 2026 **Mohamed LALAH / Secretofnet**.  
+Copyright © 2026 **Mohamed LALAH / SecretoTools**.  
 All Rights Reserved.
 
-## Protected SecretoBoot Components
+The SecretoBoot name, branding, theme, visual assets, application code, scripts, configuration logic, documentation, and project structure are original SecretoBoot components unless otherwise stated.
 
-The following SecretoBoot Enterprise components are original work and are protected by copyright:
-
-- SecretoBoot Enterprise name and branding
-- SecretoBoot theme
-- Artwork and visual design
-- Icons and preview images
-- Installer scripts
-- PowerShell scripts
-- CMD utilities
-- Documentation
-- Configuration files
-- Project structure
-- Screenshots and promotional materials
-
-Unauthorized commercial redistribution of SecretoBoot-branded materials is not permitted without written permission from Mohamed LALAH / Secretofnet.
-
-## Third Party Components
-
-This copyright statement does not apply to rEFInd itself.
-
-rEFInd remains the property of its respective author and maintainers and is distributed under its own license.
+This copyright statement does not claim ownership of third-party components such as **rEFInd Boot Manager**. Third-party components remain subject to their own licenses.

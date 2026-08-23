@@ -1,0 +1,25 @@
+{
+  "ManifestVersion": "v9-canonical-runtime-integrity-1",
+  "ExpectedFileList": [
+    "canonical-runtime/Providers/WindowsAndroidEvidence/Native/SecretoBoot.WindowsAndroidEvidence.Native.cs",
+    "canonical-runtime/Providers/WindowsAndroidEvidence/SecretoBoot.WindowsAndroidEvidence.psm1",
+    "canonical-runtime/Providers/WindowsEfiEvidence/Native/SecretoBoot.WindowsEfiEvidence.Native.cs",
+    "canonical-runtime/Providers/WindowsEfiEvidence/SecretoBoot.WindowsEfiEvidence.psm1",
+    "canonical-runtime/SecretoBoot.AndroidInstallationRelationship.psm1",
+    "canonical-runtime/SecretoBoot.CanonicalEvidenceCollector.psm1",
+    "canonical-runtime/SecretoBoot.DiscoveryDiagnostics.psm1",
+    "canonical-runtime/SecretoBoot.MultiOsMvpEfi.Manifest.psm1",
+    "canonical-runtime/SecretoBoot.MultiOsMvpEfi.Transport.psm1"
+  ],
+  "Files": {
+    "canonical-runtime/Providers/WindowsAndroidEvidence/Native/SecretoBoot.WindowsAndroidEvidence.Native.cs": "9002771a0a43941f031305caae54422636faa6ac0154d02e9588533e825713b4",
+    "canonical-runtime/Providers/WindowsAndroidEvidence/SecretoBoot.WindowsAndroidEvidence.psm1": "c56525a3e88dcdc7eb18cbae522d7d1b4e2e5aba6335e4a1e1d7eaeece5e1a57",
+    "canonical-runtime/Providers/WindowsEfiEvidence/Native/SecretoBoot.WindowsEfiEvidence.Native.cs": "38b42e7b87d91be1b783561e90b260bd30d86959e98cc27c4c246c574865ea45",
+    "canonical-runtime/Providers/WindowsEfiEvidence/SecretoBoot.WindowsEfiEvidence.psm1": "abd76880189791df43707cfd1cbe886f1a10263702e977a59fc266247a7f193b",
+    "canonical-runtime/SecretoBoot.AndroidInstallationRelationship.psm1": "0c6c55fe6629d8dd4dd8d906dd3a91e0fd60434832bf185b94ae2b50bc3e9389",
+    "canonical-runtime/SecretoBoot.CanonicalEvidenceCollector.psm1": "014bc73143a7951ad45fe79ae0c7657549b197533e706c417c0a811f0b045618",
+    "canonical-runtime/SecretoBoot.DiscoveryDiagnostics.psm1": "5f8f30c88013bb799f10bdb519ad71097dedd6cf2168222c4fc699d40a7ff640",
+    "canonical-runtime/SecretoBoot.MultiOsMvpEfi.Manifest.psm1": "79438d55dc549f3098d938ce13601cbfbe17f7b277ee31a1d5e846c5c74a0626",
+    "canonical-runtime/SecretoBoot.MultiOsMvpEfi.Transport.psm1": "fae8a535f10e42b56c7510039bfffd65e19c46b2c8ef27d6499d405267292eab"
+  }
+}

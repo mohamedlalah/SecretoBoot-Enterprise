@@ -1,0 +1,17 @@
+{
+  "Product": "SecretoBoot V9",
+  "Package": "Android Accessible-Volume MVP Validation",
+  "PackageRevision": "Android-Initrd-Runtime-MVP.1",
+  "Scope": "Level 1 metadata plus exact-path bounded read-only ordinary-volume Android evidence",
+  "NonElevatedRequired": true,
+  "DirectoryEnumeration": "Forbidden",
+  "EFI": "Forbidden",
+  "Mounts": "Forbidden",
+  "DriveLetterAssignment": "Forbidden",
+  "Writes": "Forbidden",
+  "BootState": "Forbidden",
+  "Network": "Disabled",
+  "RefindAccess": "Forbidden",
+  "CreatedUtc": "2026-08-21T02:23:27Z",
+  "SourceHead": "016400d7b81bd4eb059e9fe996dc0ae8bcbc533e"
+}

@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://secretoboot.local/schemas/v9/end-to-end-deployment-plan.schema.json",
+  "title": "SecretoBoot V9 production deployment plan envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["SchemaVersion", "Status", "Revision", "Deployable", "PlanCoreJson", "PlanDigest", "BootEntries", "ManualConfirmationCandidates", "DeploymentAuthorized", "EfiWrites", "FirmwareWrites", "BcdWrites"],
+  "properties": {
+    "SchemaVersion": {"const": "v9-end-to-end-envelope-1"},
+    "Status": {"enum": ["ReadyForSecurityPreflight", "ReadyForElevatedHybridResolution", "ManualConfirmationRequired"]},
+    "Revision": {"const": "Windows-Desktop-V9-FinalRelease.1-WindowsFirstCompatibilityPreflightFix.1"},
+    "Deployable": {"type": "boolean"},
+    "PlanCoreJson": {"type": "string", "maxLength": 1048576},
+    "PlanDigest": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "BootEntries": {"type": "array", "maxItems": 256},
+    "ManualConfirmationCandidates": {"type": "array", "maxItems": 512},
+    "DeploymentAuthorized": {"const": false},
+    "EfiWrites": {"const": 0},
+    "FirmwareWrites": {"const": 0},
+    "BcdWrites": {"const": 0}
+  }
+}

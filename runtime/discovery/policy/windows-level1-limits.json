@@ -1,0 +1,11 @@
+{
+  "policyVersion": "v9level1limits1",
+  "operationTimeoutMilliseconds": 10000,
+  "maximumTimeoutMilliseconds": 30000,
+  "maximumSerializedOutputBytes": 1048576,
+  "maximumDiskRecords": 256,
+  "maximumPartitionRecords": 4096,
+  "maximumVolumeRecords": 4096,
+  "maximumOsRecords": 1,
+  "maximumDiagnosticEntries": 64
+}
